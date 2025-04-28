@@ -33,7 +33,10 @@ const Projects = () => {
       <h2 className="text-3xl font-bold text-[#D4C9BE] mb-6 text-center">Projects</h2>
       <div className="space-y-12">
         {projects.map((project, index) => (
-          <div key={index} className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center mb-12`}>
+          <div
+            key={index}
+            className={`flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} items-center mb-12`}
+          >
             <div className="w-full md:w-1/2">
               <img
                 src={project.imageUrl}
@@ -44,15 +47,28 @@ const Projects = () => {
             <div className="w-full md:w-1/2 pl-8">
               <h3 className="text-2xl font-bold text-[#D4C9BE]">{project.name}</h3>
               <p className="text-[#F1EFEC] mt-2">{project.description}</p>
-              <p className="text-[#F1EFEC] mt-2 font-semibold">Tech Stack: {project.techStack}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#D4C9BE] mt-4 inline-block text-lg font-semibold hover:text-[#F1EFEC] transition-colors"
-              >
-                View Live Demo
-              </a>
+              <p className="text-[#F1EFEC] mt-2 font-semibold">
+                Tech Stack: {project.techStack}
+              </p>
+              <div className="flex items-center gap-4 mt-4">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#D4C9BE] inline-block text-lg font-semibold hover:text-[#F1EFEC] transition-colors"
+                >
+                  View Live Demo
+                </a>
+                <span className="text-[#D4C9BE] text-lg font-semibold">|</span>
+                <a
+                  href="https://github.com/mhmmdkaif"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#D4C9BE] inline-block text-lg font-semibold hover:text-[#F1EFEC] transition-colors"
+                >
+                  View Code
+                </a>
+              </div>
             </div>
           </div>
         ))}
