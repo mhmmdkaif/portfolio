@@ -61,8 +61,9 @@ const Resume = () => {
       <div className="flex flex-col items-center text-center w-full md:w-1/2 mt-8 md:mt-0">
         <h1 className="text-3xl font-bold text-[#D4C9BE] mb-2">About Me</h1>
         <p className="text-[#F1EFEC] max-w-md text-base leading-relaxed">
-          I am Muhammad Kaif AR, a passionate developer focused on building clean, user-friendly digital experiences. 
-          Always striving for growth, creativity, and excellence in everything I build.
+        I am a passionate Full Stack Developer currently pursuing my B.Tech at Lovely Professional University, specializing in Full Stack Development. With strong programming skills in C++ and Java, I have built a solid foundation in both software development and backend logic.
+My technical expertise includes working with modern web technologies like React, Node.js, Express.js, MySQL, and MongoDB. I enjoy building complete, scalable web applications from scratch and constantly strive to improve my skills.
+As a 3rd-year student, I am focused on developing impactful projects, enhancing my problem-solving abilities through DSA, and preparing myself to contribute meaningfully to the tech industry.
         </p>
       </div>
 
